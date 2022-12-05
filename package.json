@@ -1,0 +1,27 @@
+{
+  "name": "BlipSHTT",
+  "version": "0.0.1",
+  "description": "Blip should have these tools",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/main.js",
+    "dev": "nodemon src/main.js",
+    "bundle": "browserify src/main.js -o dist/bundle.js",
+    "minify": "uglifyjs dist/bundle.js -o dist/bundle.min.js",
+    "release": "node createRelease.js",
+    "build": "npm run bundle && npm run minify && npm run release"
+  },
+  "repository": "git+https://github.com/arajooj/BlipSHTT.git",
+  "author": "Victor P. Araújo <victor@fdge.com.br>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arajooj/BlipSHTT/issues"
+  },
+  "homepage": "https://github.com/arajooj/BlipSHTT#readme",
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "nodemon": "^2.0.20",
+    "uglify-js": "^3.17.4"
+  }
+}
