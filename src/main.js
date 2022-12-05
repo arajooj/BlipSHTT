@@ -1,12 +1,7 @@
-/**
- * somarDoisNumeros.
- * @param   a  Numero a ser somado.
- * @param   b  Outro Numero a ser somado.
- * @returns Valor somado.
- */
+const base = require('./modules/base');
+const conteudoDinamico = require('./modules/conteudoDinamico');
 
-function somarDoisNumeros(a, b) {
-    return a + b;
+module.exports = {
+    Base: base,
+    ConteudoDinamico: conteudoDinamico
 }
-
-module.exports = { somarDoisNumeros }
